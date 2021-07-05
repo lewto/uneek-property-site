@@ -1,0 +1,113 @@
+.value-prop-content {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  row-gap: 0.25em;
+  margin-bottom: 2em;
+  padding: 2em;
+  max-width: $maxContainerWidth;
+  margin: 0 auto;
+}
+
+.main-message {
+  grid-column: span 8;
+  grid-row: span 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  p {
+    margin-top: 0;
+  }
+}
+
+.main-subtitle {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 32px;
+  mix-blend-mode: normal;
+}
+
+.main-photo {
+  grid-column: span 8;
+  grid-row: span 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../assets/ui-elements/main-photo.svg") no-repeat top;
+  background-size: 100% 100%;
+  height: 100%;
+  padding: 0;
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.tag-line {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  background: -webkit-linear-gradient($mainColor, $mainHighlight);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  mix-blend-mode: normal;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.21);
+}
+
+.input-div {
+  grid-column: span 8;
+  grid-row: span 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input-form {
+  width: 300px;
+  height: 54px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  filter: drop-shadow(1px 3px 9px rgba(0, 0, 0, 0.25));
+  border-radius: 12px;
+}
+
+.access-button {
+  height: 55px;
+  background: #3188ff;
+  border-radius: 12px;
+}
+
+.line {
+  transform: rotate(90deg);
+  background: url("../assets/ui-elements/line-value-prop.svg") no-repeat top;
+  background-size: 100% 100%;
+}
+
+@include breakpoint("from-tablet-l") {
+  .value-prop-content {
+    margin: 2rem auto 3rem auto;
+  }
+
+  .main-message {
+    grid-column: span 4;
+    grid-row: span 8;
+  }
+
+  .main-photo {
+    grid-column: span 4;
+    grid-row: span 8;
+  }
+
+  .main-message {
+    align-items: flex-start;
+    text-align: left;
+    button {
+      margin: 0;
+    }
+  }
+}
