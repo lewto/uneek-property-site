@@ -24,12 +24,9 @@ const Header = ({ siteTitle }) => {
       <nav className="navbar">
         <div className="nav-belt">
           <div>
-            <h4>
-              <Link className="logo" to="/">
-                <div className="logo-image"></div>
-                <div className="domain-logo"></div>
-              </Link>
-            </h4>
+            <Link className="logo" to="/">
+              <div className="logo-image"></div>
+            </Link>
           </div>
           <ul className={navClasses}>
             <li className={navItemClasses}>

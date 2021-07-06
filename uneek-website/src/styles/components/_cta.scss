@@ -24,7 +24,7 @@
 }
 
 .gradient-title {
-  background: -webkit-linear-gradient($mainColor, $mainHighlight);
+  background: -webkit-linear-gradient($mainHighlight 35%, $mainColor);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
