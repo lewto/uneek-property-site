@@ -1,14 +1,16 @@
 import React from "react"
-import Button from "./Button"
 
 const CallToAction = props => {
   return (
     <section className="cta">
       <h1>
-        One QR, <span className="gradient-title">Uneek</span>
+        <span className="gradient-title">One QR </span>
       </h1>
       <p>Get early access now!</p>
-      <Button label="Sign Up" />
+      <br />
+      <a className="uneek-link" href="https://uneek-property.link/login">
+        Sign Up
+      </a>
     </section>
   )
 }

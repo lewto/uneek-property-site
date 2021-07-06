@@ -36,13 +36,14 @@ const Header = ({ siteTitle }) => {
               <a href="#">Home</a>
             </li>
             <li className={navItemClasses}>
-              <a href="#">Features</a>
+              <a href="#product-benefits">Features</a>
             </li>
-            <li className={navItemClasses}>
-              <a href="#">Contact</a>
+            <li className="emoji-link">
+              <a href="#contact">Contact</a>
+              <div className="emoji" />
             </li>
             <li className={`${navItemClasses} nav-item-bold`}>
-              <a href="#">Log In</a>
+              <a href="https://uneek-property.link/">Log In</a>
             </li>
           </ul>
           <div className={burgerClass} onClick={toggle}>

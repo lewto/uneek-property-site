@@ -1,21 +1,19 @@
-import React from 'react';
+import React from "react"
 
-const Footer =  ({ siteTitle }) => {
-
+const Footer = ({ siteTitle }) => {
   return (
-    <footer className="footer">
+    <footer id="contact" className="footer">
       <div className="footer-belt">
         <div className="company-sign">
-        &copy; 2020 {siteTitle}
-      </div>
-        <div className="social-media">
-          <a href="https://www.facebook.com"><div className="social-facebook">Facebook</div></a>
-          <a href="https://www.twitter.com"><div className="social-twitter">Twitter</div></a>
-          <a href="https://www.instagram.com"><div className="social-instagram">Instagram</div></a>
+          Copyright © 2021. <br /> UNEEK LINK PTY LTD All <br />
+          rights reserved.
+        </div>
+        <div className="contact">
+          Contact: <br /> info@uneek.link <br /> 0478028375
         </div>
       </div>
     </footer>
   )
-};
+}
 
-export default Footer;
+export default Footer

@@ -6,10 +6,11 @@ import lineBot from "../assets/ui-elements/line-bot.svg"
 const ProductBenefits = props => {
   return (
     <>
-      <div className="product-benefits-title">
+      <section className="product-benefits-title">
         <h4>Adapt your agency to the ‘new normal’</h4>
-      </div>
-      <section className="product-benefits">
+        <img src={lineTop} alt="line" />
+      </section>
+      <section id="product-benefits" className="product-benefits">
         <div className="product-benefits-group">
           <div className="product-benefit-1-box">
             <div className="product-benefit-1-subheading">
@@ -37,7 +38,7 @@ const ProductBenefits = props => {
               <h4>No extra busy work </h4>
               <p>
                 All property information automatically populated by
-                domain.com.au.
+                domain.com.au, Client SSO sign in for ease.
               </p>
             </div>
             <div className="product-benefit-2-subheading">
@@ -47,17 +48,25 @@ const ProductBenefits = props => {
                 office.
               </p>
             </div>
+            <div className="product-benefit-2-subheading">
+              <h4> Integrated Maps </h4>
+              <p>
+                Present your customers with the highly detailed Uneek map and
+                let them explore more of your properties and upcoming OFIs.
+              </p>
+            </div>
           </div>
           <div className="product-benefit-2-image"></div>
         </div>
       </section>
-      <div className="product-benefits-title">
+      <section className="product-benefits-title">
+        <img src={lineMid} alt="line" />
         <h4>
           Guaranteed compliance with the Victorian government contact tracing
           program
         </h4>
-      </div>
-      <div className="product-benefits-lower-text">
+      </section>
+      <section className="product-benefits-lower-text">
         <p>
           We don’t want to clutter up your opens with QR codes, so we have
           created a one QR system. You clients can check in using the official
@@ -65,7 +74,7 @@ const ProductBenefits = props => {
           with the one QR code.
         </p>
         <img src={lineBot} alt="line" />
-      </div>
+      </section>
     </>
   )
 }
